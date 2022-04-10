@@ -55,7 +55,8 @@ mapbox_api_token = "pk.eyJ1Ijoia2FyYW4tcy1taXR0YWwiLCJhIjoiY2s4bHRhb3RlMDUyMjNub
 # filtered_df.to_parquet("filtered_df.parquet")
 
 # main_df = pd.read_parquet("./data/re_cash_columns.parquet")
-filtered_df = pd.read_parquet("./data/filtered_df.parquet")
+data_url = "https://github.com/Karan-S-Mittal/recash-dashdeck/blob/main/data/filtered_df.parquet?raw=true"
+filtered_df = pd.read_parquet(data_url)
 # tooltip = {
 #     "html": "<b>Elevation Value:</b> {elevationValue}",
 #     "style": {"backgroundColor": "steelblue", "color": "white"},
